@@ -21,3 +21,7 @@ app.post('/user', function(req,res){
     res.status(200).send({"message": "Data successfully received."});
     console.log('Posting the user data ends.');
 });
+
+app.post('/error', function(req,res){
+    res.status(401).send({"message": "Posting failed."});
+});
